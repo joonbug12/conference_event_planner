@@ -19,9 +19,7 @@ const ConferenceEvent = () => {
         venue: venueTotalCost,
         av: avTotalCost,    //add ons
         meals: mealsTotalCost,
-    }
-    const total_amount = totalCosts.venue + totalCosts.av + totalCosts.meals;
-    
+    }    
     const handleToggleItems = () => {
         console.log("handleToggleItems called");
         setShowItems(!showItems);
@@ -302,13 +300,8 @@ const ConferenceEvent = () => {
                         </div>
                     )
                 }
-
-
-
-
             </div>
         </>
-
     );
 };
 
