@@ -20,6 +20,7 @@ const ConferenceEvent = () => {
         av: avTotalCost,    //add ons
         meals: mealsTotalCost,
     }
+    const total_amount = totalCosts.venue + totalCosts.av + totalCosts.meals;
     
     const handleToggleItems = () => {
         console.log("handleToggleItems called");
@@ -118,6 +119,7 @@ const ConferenceEvent = () => {
             </div>
         </>
     };
+
     const calculateTotalCost = (section) => {
         let totalCost = 0;
         if (section === "venue") {
